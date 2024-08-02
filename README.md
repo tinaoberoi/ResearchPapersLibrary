@@ -17,3 +17,8 @@ A library of research papers along with their summary and explanation of require
 - Stabalizers
   - Read:
   - To Read:
+
+- QNN:
+  - https://discuss.pennylane.ai/t/quantum-neural-networks-quanvolutional-nn/1111/9
+  - https://arxiv.org/pdf/2303.05860
+  - 
