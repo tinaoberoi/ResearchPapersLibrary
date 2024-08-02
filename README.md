@@ -2,7 +2,8 @@
 A library of research papers along with their summary and explanation of required concepts
 
 ## Topics
-
+- Understanding Different Qubit Implementations
+  - ![Medium Article by Daniel Goldsmith](https://medium.com/@DigiCatapult/which-technology-will-win-the-quantum-race-154e38c0b227)
 - Tensor Networks
   - Read:
   - To Read:
