@@ -3,8 +3,9 @@ A library of research papers along with their summary and explanation of require
 
 ## Topics
 - Understanding Different Qubit Implementations
-  - ![Medium Article by Daniel Goldsmith](https://medium.com/@DigiCatapult/which-technology-will-win-the-quantum-race-154e38c0b227)
+  - [Medium Article by Daniel Goldsmith](https://medium.com/@DigiCatapult/which-technology-will-win-the-quantum-race-154e38c0b227)
   - [Superconducting qubits](https://www.diva-portal.org/smash/get/diva2:755939/FULLTEXT01.pdf)
+  - [IBM on Superconducting Qubits](https://medium.com/qiskit/how-the-first-superconducting-qubit-changed-quantum-computing-forever-96cf261b8498#:~:text=superconducting%20circuit%20with%20a%20Josephson%20Junction%20have,what%20we%20refer%20to%20as%20nonlinear%20inductors.)
 - Tensor Networks
   - Read:
   - To Read:
