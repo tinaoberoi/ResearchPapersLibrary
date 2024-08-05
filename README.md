@@ -4,6 +4,7 @@ A library of research papers along with their summary and explanation of require
 ## Topics
 - Understanding Different Qubit Implementations
   - ![Medium Article by Daniel Goldsmith](https://medium.com/@DigiCatapult/which-technology-will-win-the-quantum-race-154e38c0b227)
+  - [Superconducting qubits](https://www.diva-portal.org/smash/get/diva2:755939/FULLTEXT01.pdf)
 - Tensor Networks
   - Read:
   - To Read:
