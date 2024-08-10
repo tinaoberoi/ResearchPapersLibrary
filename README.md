@@ -26,3 +26,4 @@ A library of research papers along with their summary and explanation of require
  
 - HPC + Quantum
 - VQE
+  - [Understanding Convex and Non Convex](https://rumn.medium.com/convex-vs-non-convex-functions-why-it-matters-in-optimization-for-machine-learning-39cd9427dfcc#:~:text=When%20selecting%20an%20optimization%20algorithm,to%20find%20the%20global%20minimum.)
