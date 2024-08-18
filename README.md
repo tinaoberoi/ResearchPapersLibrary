@@ -32,3 +32,6 @@ A library of research papers along with their summary and explanation of require
   - [Pennylane Intro](https://pennylane.ai/qml/demos/tutorial_liealgebra/)
   - [Quantum Tutorials Youtube](https://www.youtube.com/watch?v=5xMHwFMEB-M&list=PL0Xofz0xOUtztLE7LaDdKQ_8_8GpKvf5k)
   - [Lie Algebra Book]()
+
+- Miscelleneous
+  - [Difference between Fermi Hubbard Model and Quantum Skyrmions](./fermi_vs_skyrmion.md)
