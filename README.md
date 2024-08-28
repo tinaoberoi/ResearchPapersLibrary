@@ -34,4 +34,5 @@ A library of research papers along with their summary and explanation of require
   - [Lie Algebra Book]()
 
 - Miscelleneous
-  - [Difference between Fermi Hubbard Model and Quantum Skyrmions](./fermi_vs_skyrmion.md)
+  - [Difference between Fermi Hubbard Model and Quantum Skyrmions](./notes/fermi_vs_skyrmion.md)
+  - [Transmon qubits](./notes/transmon_qubits.md)
