@@ -36,3 +36,5 @@ A library of research papers along with their summary and explanation of require
 - Miscelleneous
   - [Difference between Fermi Hubbard Model and Quantum Skyrmions](./notes/fermi_vs_skyrmion.md)
   - [Transmon qubits](./notes/transmon_qubits.md)
+  - [AdS/CFT correspondence](./notes/ads_cft.md)
+  - 
