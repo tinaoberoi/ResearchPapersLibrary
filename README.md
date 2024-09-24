@@ -16,9 +16,8 @@ A library of research papers along with their summary and explanation of require
   - Read:
   - To Read:
     - https://arxiv.org/pdf/1505.03068
-- Stabalizers
-  - Read:
-  - To Read:
+- Cliffords
+  - [What are clifford gates and clifford circuits? ](./notes/clifford_intro.md)
 
 - QNN:
   - https://discuss.pennylane.ai/t/quantum-neural-networks-quanvolutional-nn/1111/9
