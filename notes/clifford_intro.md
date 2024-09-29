@@ -18,7 +18,7 @@ Clifford Circuits: Circuits entirely made of clifford gates.
 
 ## Why Clifford circuits?
 
-1. Efficient Classical Simulation. 
+1. Efficient Classical Simulation. [Ref](https://www.cs.umd.edu/~amchilds/teaching/w14/project-sample.pdf) 
 One of the most interesting features of Clifford circuits is that they can be efficiently simulated on a classical computer using the Gottesman-Knill theorem. This is because the Clifford group (the set of all Clifford gates) does not generate computationally hard quantum operations by itself.
 
 2. Role in Quantum Error Correction
@@ -27,3 +27,7 @@ One of the most interesting features of Clifford circuits is that they can be ef
 
 While Clifford gates are crucial in many areas of quantum computing, they do not form a universal gate set for quantum computation on their own. To achieve universal quantum computation (i.e., the ability to perform any possible quantum computation), non-Clifford gates like the T-gate are needed. Adding a T-gate to a Clifford circuit enables universal quantum computation.
 
+
+**A stabilizer circuit refers to a quantum circuit built entirely from Clifford gates (like CNOT, H, and S) and measurement gates.**
+
+**"A stabilizer circuit that contains no measurement gates is thus referred to as a Clifford group circuit."**
