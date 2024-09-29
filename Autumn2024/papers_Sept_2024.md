@@ -362,23 +362,130 @@ onto the 2D IBM Heavy-Hex topology.
 ---
 ### Paper 12
 - **Date**: 2024-09-28
-- **Title**: [Title of the Paper](link)
-- **Authors**: Author Names
-- **Keywords**: List of keywords
-- **Abstract**: Abstract text here
-- **Summary**: Brief summary or key points of the paper
+- **Title**: [Non-stabilizerness Entanglement Entropy: a measure of hardness in the classical simulation of quantum many-body systems](https://arxiv.org/abs/2409.16895)
+- **Authors**: Jiale Huang, Xiangjian Qian, Mingpu Qin
+- **Keywords**: classical simulations, entanglement entropy
+- **Abstract**: Classical and quantum states can be distinguished by entanglement entropy, which can be viewed
+as a measure of quantum resources. Entanglement entropy also plays a pivotal role in understanding
+computational complexity in simulating quantum systems. However, stabilizer states formed solely
+by Clifford gates can be efficiently simulated with the tableau algorithm according to the GottesmanKnill theorem, although they can host large entanglement entropy. In this work, we introduce
+the concept of non-stabilizerness entanglement entropy which is basically the minimum residual
+entanglement entropy for a quantum state by excluding the contribution from Clifford circuits. It
+can serve as a new practical and better measure of difficulty in the classical simulation of quantum
+many-body systems. We discuss why it is a better criterion than previously proposed metrics such as
+Stabilizer R´enyi Entropy. We also show numerical results of non-stabilizerness entanglement entropy
+with concrete quantum many-body models. The concept of non-stabilizerness entanglement entropy
+expands our understanding of the “hardness” in the classical simulation of quantum many-body
+systems.
+- **Summary**: Entanglement entropy is a well known metric, with the understanding that
+higher entanglement entropy indicates greater difficulty
+in classical simulation. Following the GottesmanKnill theorem [11, 12], it was recognized that the number of non-Clifford gate operations needed also serves as an indicator of simulation difficulty [35–40], since Clifford gate operations can be efficiently simulated on classical computers. This measure is also referred to as nonstabilizerness or quantum magic. Moreover, calculating the magic of a quantum system
+is generally a hard problem [36, 37, 42–47]. Although numerous effective computational methods have been developed [43, 45, 48, 49], they are primarily applicable only
+to small system sizes or special systems. In this work, we introduce a new metric termed Nonstabilizerness Entanglement Entropy (NsEE), which integrates entanglement entropy and quantum magic. We
+show NsEE is a better metric to characterize the difficulty in the classical simulation of quantum many-body
+systems
 - **Miscellaneous**: Any additional information
 ---
 ### Paper 13
 - **Date**: 2024-09-28
-- **Title**: [Title of the Paper](link)
-- **Authors**: Author Names
+- **Title**: [Preparing Ground and Excited States Using Adiabatic CoVaR](https://arxiv.org/pdf/2409.16194)
+- **Authors**: Wooseop Hwang, and B´alint Koczor
+- **Keywords**: List of keywords
+- **Abstract**: CoVarince Root finding with classical shadows (CoVaR) was recently introduced as a new
+paradigm for training variational quantum circuits. Common approaches, such as variants of the
+Variational Quantum Eigensolver, aim to optimise a non-linear classical cost function and thus suffer from, e.g., poor local minima, high shot requirements and barren plateaus. In contrast, CoVaR
+fully exploits powerful classical shadows and finds joint roots of a very large number of covariances
+using only a logarithmic number of shots and linearly scaling classical HPC compute resources. As
+a result, CoVaR has been demonstrated to be particularly robust against local traps, however, its
+main limitation has been that it requires a sufficiently good initial state. We address this limitation
+by introducing an adiabatic morphing of the target Hamiltonian and demonstrate in a broad range
+of application examples that CoVaR can successfully prepare eigenstates of the target Hamiltonian
+when no initial warm start is known. CoVaR succeeds even when Hamiltonian energy gaps are very
+small – this is in stark contrast to adiabatic evolution and phase estimation algorithms where circuit depths scale inversely with the Hamiltonian energy gaps. On the other hand, when the energy
+gaps are relatively small then adiabatic CoVaR may converge to higher excited states as opposed
+to a targeted specific low-lying state. Nevertheless, we exploit this feature of adiabatic CoVaR and
+demonstrate that it can be used to map out the low lying spectrum of a Hamiltonian which can be
+useful in practical applications, such as estimating thermal properties or in high-energy physics.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+### Paper 14
+- **Date**: 2024-09-28
+- **Title**: [QHyper: an integration library for hybrid
+quantum-classical optimization](https://arxiv.org/pdf/2409.15926)
+- **Authors**: Tomasz Lamza, Justyna Zawalska
+- **Keywords**: QHyper, Quantum Optimization, Hyperparameter
+Optimization, Variational Algorithms, Quantum Annealing, Penalties
+- **Abstract**: We propose the QHyper library, which is aimed at researchers working on
+computational experiments with a variety of quantum combinatorial optimization solvers. The library offers a simple and extensible interface for formulating combinatorial optimization problems, selecting and running solvers,
+and optimizing hyperparameters. The supported solver set includes variational gate-based algorithms, quantum annealers, and classical solutions.
+The solvers can be combined with provided local and global (hyper)optimizers.
+The main features of the library are its extensibility on different levels of use
+as well as a straightforward and flexible experiment configuration format presented in the paper.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper 15 (Add more as needed)
+- **Date**: 2024-09-28
+- **Title**: [FOCQS: Feedback Optimally Controlled Quantum States](https://arxiv.org/pdf/2409.15426)
+- **Authors**: Lucas T. Brady, and Stuart Hadfield1
 - **Keywords**: List of keywords
 - **Abstract**: Abstract text here
 - **Summary**: Brief summary or key points of the paper
 - **Miscellaneous**: Any additional information
 ---
-### Paper 10
+### Paper 15 (Add more as needed)
+- **Date**: 2024-09-28
+- **Title**: [Solving Max-3SAT Using QUBO Approximation](https://arxiv.org/pdf/2409.15891)
+- **Authors**: Sebastian Zielinski
+- **Keywords**: Quadratic Unconstrained Binary Optimization,
+Combinatorial Optimization, Max-3SAT, Approximation
+- **Abstract**: As contemporary quantum computers do not possess
+error correction, any calculation performed by these devices can
+be considered an involuntary approximation. To solve a problem
+on a quantum annealer, it has to be expressed as an instance
+of Quadratic Unconstrained Binary Optimization (QUBO). In
+this work, we thus study whether systematically approximating
+QUBO representations of the MAX-3SAT problem can improve
+the solution quality when solved on contemporary quantum hardware, compared to using exact, non-approximated QUBO representations. For a MAX-3SAT instance consisting of a 3SAT formula with n variables and m clauses, we propose a method
+of systematically creating approximate QUBO representations of
+dimension (n×n), which is significantly smaller than the QUBO
+matrices of any exact, non-approximated MAX-3SAT QUBO
+transformation. In an empirical evaluation, we demonstrate
+that using our QUBO approximations for solving MAX-3SAT
+problems on D-Wave’s quantum annealer Advantage System6.4
+can yield better results than using state-of-the-art exact QUBO
+transformations. Furthermore, we demonstrate that using naive
+QUBO approximation methods, based on removing values from
+exact (n + m) × (n + m)-dimensional QUBO representations of
+MAX-3SAT instances, is ineffective.
+- **Summary**: LUSION
+Due to the missing error correction of contemporary quantum hardware, any quantum computer calculation can be
+considered an involuntary solution approximation. In this
+work, we thus studied whether it is possible to improve the
+solution quality when solving problems on D-Wave’s quantum
+annealer Advantage System6.4 by using systematic QUBO
+approximation of MAX-3SAT problems instead of exact, nonapproximated QUBO representations as an input for the quantum annealer. For a MAX-3SAT instance consisting of a 3SAT
+formula with n variables and m clauses, our proposed QUBO
+approximation method yields (n × n)-dimensional QUBO
+matrices, which is considerably smaller than the QUBO matrices that result from any exact, non-approximated QUBO
+transformation. The method is based on an adaption of the
+creation method of exact QUBO transformations that result
+in QUBO matrices of dimension (n + m) × (n + m). In
+an empirical evaluation, we demonstrated that our QUBO
+approximations can yield comparable or even better results
+than exact, non-approximated QUBO transformations when
+solved on D-Wave’s quantum annealer Advantage System6.4.
+Furthermore, 50% larger MAX-3SAT instances can be solved
+on the quantum annealer due to our approximation method’s
+reduced need for physical qubits. Additionally, we empirically
+showed that naive methods of creating QUBO approximations
+for MAX-3SAT problems using (n+m)×(n+m)-dimensional
+QUBO matrices as initial QUBOs are not effective.
+- **Miscellaneous**: Any additional information
+---
+### Paper 15 (Add more as needed)
 - **Date**: 2024-09-28
 - **Title**: [Title of the Paper](link)
 - **Authors**: Author Names
@@ -387,9 +494,17 @@ onto the 2D IBM Heavy-Hex topology.
 - **Summary**: Brief summary or key points of the paper
 - **Miscellaneous**: Any additional information
 ---
-
-### Paper I (Add more as needed)
-- **Date**: YYYY-MM-DD
+### Paper 15 (Add more as needed)
+- **Date**: 2024-09-28
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+### Paper 15 (Add more as needed)
+- **Date**: 2024-09-28
 - **Title**: [Title of the Paper](link)
 - **Authors**: Author Names
 - **Keywords**: List of keywords
