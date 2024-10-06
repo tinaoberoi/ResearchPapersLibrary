@@ -486,7 +486,95 @@ QUBO matrices as initial QUBOs are not effective.
 - **Miscellaneous**: Any additional information
 ---
 ### Paper 15 (Add more as needed)
+- **Date**: 2024-09-29
+- **Title**: [Generic and Scalable Differential Equation Solver for Quantum Scientific Computing](https://arxiv.org/abs/2409.18146)
+- **Authors**: Jinhwan Sul, Yan Wang
+- **Keywords**: List of keywords
+- **Abstract**: One of the most important topics in quantum scientific computing is solving differential equations. In this paper, generalized quantum functional expansion (QFE) framework is proposed. In the QFE framework, a functional expansion of solution is encoded into a quantum state and the time evolution of the quantum state is solved with variational quantum simulation (VQS). The quantum functional encoding supports different numerical schemes of functional expansions. The lower bound of the required number of qubits is double logarithm of the inverse error bound in the QFE framework. Furthermore, a new parallel Pauli operation strategy is proposed to significantly improve the scalability of VQS. The number of circuits in VQS is exponentially reduced to only the quadratic order of the number of ansatz parameters. Four example differential equations are solved to demonstrate the generic QFE framework.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+### Paper 15 (Add more as needed)
+- **Date**: 2024-09-29
+- **Title**: [Fault-Tolerant Logical Clifford Gates from Code Automorphisms](arXiv:2409.18175v1)
+- **Authors**:  Hasan Sayginel, Stergios Koutsioumpas, Mark Webster, Abhishek Rajput, Dan E Browne
+- **Keywords**: List of keywords
+- **Abstract**: We study the implementation of fault-tolerant logical Clifford gates on stabilizer quantum error correcting codes based on their symmetries. Our approach is to map the stabilizer code to a binary linear code, compute its automorphism group, and impose constraints based on the Clifford operators permitted. We provide a rigorous formulation of the method for finding automorphisms of stabilizer codes and generalize ZX-dualities to non-CSS codes. We provide a Python package implementing our algorithms which uses the computational algebra system MAGMA. Our algorithms map automorphism group generators to physical circuits, calculate Pauli corrections based on the destabilizers of the code, and determine their logical action. We discuss the fault tolerance of the circuits and include examples of gates through automorphisms for the [[4,2,2]] and perfect [[5,1,3]] codes, bivariate bicycle codes, and the best known distance codes.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+### Paper 15 (Add more as needed)
 - **Date**: 2024-09-28
+- **Title**: [AQMLator -- An Auto Quantum Machine Learning E-Platform](arXiv:2409.18338v1)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: A successful Machine Learning (ML) model implementation requires three main components: training dataset, suitable model architecture and training procedure. Given dataset and task, finding an appropriate model might be challenging. AutoML, a branch of ML, focuses on automatic architecture search -- a meta method that aims at moving human from ML system design process. The success of ML and the development of quantum computing (QC) in recent years led to a birth of new fascinating field called Quantum Machine Learning (QML) that, amongst others, incorporates quantum computers into ML models. In this paper we present AQMLator, an Auto Quantum Machine Learning platform that aims to automatically propose and train the quantum layers of an ML model with minimal input from the user. This way, data scientists can bypass the entry barrier for QC and use QML. AQMLator uses standard ML libraries, making it easy to introduce into existing ML pipelines.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: 2024-09-29
+- **Title**: [Fault-Tolerant Belief Propagation for Practical Quantum Memory](arXiv:2409.18689v1)
+- **Authors**: Author Names
+- **Keywords**: LisKao-Yueh Kuo, Ching-Yi Lai
+- **Abstract**: A fault-tolerant approach to reliable quantum memory is essential for scalable quantum computing, as physical qubits are susceptible to noise. Quantum error correction (QEC) must be continuously performed to prolong the memory lifetime. In QEC, error syndromes are generated rapidly, often within the execution time of a few quantum gates, requiring decoders to process this error data with equal speed. A typical QEC cycle involves multiple rounds of syndrome measurements, causing potential error locations to scale rapidly with the code size and the number of measurement rounds. However, no such decoders currently exist for general quantum low-density parity-check codes. In this paper, we propose a fault-tolerant belief propagation (FTBP) decoder that utilizes a space-time Tanner graph across multiple rounds of syndrome extraction with mixed-alphabet error variables. To enhance FTBP, we introduce a technique of probabilistic error consolidation to mitigate degeneracy effects and short cycles. Additionally, we propose an adaptive sliding window procedure that captures long error events across window boundaries and adjusts the decoding in real time. Our simulations demonstrate high error thresholds of 0.4%-0.87% and strong error-floor performance for topological code families, including rotated toric, toric color, and twisted XZZX toric codes.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: 2024-09-29
+- **Title**: [MG-Net: Learn to Customize QAOA with Circuit Depth Awareness](arXiv:2409.18692v1)
+- **Authors**: Author Names
+- **Keywords**: Yang Qian, Xinbiao Wang, Yuxuan Du, Yong Luo, Dacheng Tao
+- **Abstract**: Quantum Approximate Optimization Algorithm (QAOA) and its variants exhibit immense potential in tackling combinatorial optimization challenges. However, their practical realization confronts a dilemma: the requisite circuit depth for satisfactory performance is problem-specific and often exceeds the maximum capability of current quantum devices. To address this dilemma, here we first analyze the convergence behavior of QAOA, uncovering the origins of this dilemma and elucidating the intricate relationship between the employed mixer Hamiltonian, the specific problem at hand, and the permissible maximum circuit depth. Harnessing this understanding, we introduce the Mixer Generator Network (MG-Net), a unified deep learning framework adept at dynamically formulating optimal mixer Hamiltonians tailored to distinct tasks and circuit depths. Systematic simulations, encompassing Ising models and weighted Max-Cut instances with up to 64 qubits, substantiate our theoretical findings, highlighting MG-Net's superior performance in terms of both approximation ratio and efficiency.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: 2024-09-30
+- **Title**: [Efficient Verification of Stabilizer Code Subspaces with Local Measurements](arXiv:2409.19699v1)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: We address the task of verifying whether a quantum computer, designed to be protected by a specific stabilizer code, correctly encodes the corresponding logical qubits. To achieve this, we develop a general framework for subspace verification and explore several stabilizer code subspaces of practical significance. First, we present two efficient verification strategies for general stabilizer code subspaces, utilizing measurements of their stabilizer generators and stabilizer groups, respectively. Then, building on the observation that certain tests can be conducted in parallel when the subspace exhibits specific structural properties, we propose a coloring strategy tailored to graph code subspaces and an XZ strategy tailored to Calderbank-Shor-Steane (CSS) code subspaces. Compared to stabilizer-based strategies, these new strategies require significantly fewer measurement settings and consume fewer state copies, approaching near-global optimality. Notably, all the strategies employ a limited number of Pauli measurements, are non-adaptive, and work on mixed states, enabling efficient experimental certification of both logical qubits and logical operations in noisy quantum computers. This work contributes to the first systematic study of efficient verification of stabilizer code subspaces with local measurements.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: 2024-10-02
+- **Title**: [Resource-efficient equivariant quantum convolutional neural networks](arXiv:2410.01252v1)
+- **Authors**: Koki Chinzei, Quoc Hoan Tran, Yasuhiro Endo, Hirotaka Oshima
+- **Keywords**: List of keywords
+- **Abstract**: Equivariant quantum neural networks (QNNs) are promising quantum machine learning models that exploit symmetries to provide potential quantum advantages. Despite theoretical developments in equivariant QNNs, their implementation on near-term quantum devices remains challenging due to limited computational resources. This study proposes a resource-efficient model of equivariant quantum convolutional neural networks (QCNNs) called equivariant split-parallelizing QCNN (sp-QCNN). Using a group-theoretical approach, we encode general symmetries into our model beyond the translational symmetry addressed by previous sp-QCNNs. We achieve this by splitting the circuit at the pooling layer while preserving symmetry. This splitting structure effectively parallelizes QCNNs to improve measurement efficiency in estimating the expectation value of an observable and its gradient by order of the number of qubits. Our model also exhibits high trainability and generalization performance, including the absence of barren plateaus. Numerical experiments demonstrate that the equivariant sp-QCNN can be trained and generalized with fewer measurement resources than a conventional equivariant QCNN in a noisy quantum data classification task. Our results contribute to the advancement of practical quantum machine learning algorithms.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: 2024-10-03
+- **Title**: [Variational Graphical Quantum Error Correction Codes: adjustable codes from topological insights](arXiv:2410.02608v1)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: In this paper, we leverage the insights from Quon, a picture language for quantum information, to develop a new class of quantum error-correcting codes termed Variational Graphical Quantum Error Correction~(VGQEC) codes. The VGQEC codes feature adjustable configuration parameters that play a pivotal role in determining the error-correcting capability of the codes. This key feature offers remarkable flexibility in customizing high-quality quantum error-correcting codes for various noise models. For instance, we will present a specific VGQEC code that exhibits a seamless transition of parameters, enabling the smooth transformation of the code from the five-qubit repetition code to the [[5,1,3]] code, and furthermore, the new VGQEC code has a better performance than the above two well-known codes under certain noise models. Meanwhile, we also propose a general physical scheme to implement and optimize VGQEC codes in realistic quantum devices. Lastly, we apply our approach to amplitude damping noise, and by numerical calculations, we discover an unexpected novel three-qubit code that can effectively mitigate the noise.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: 2024-10-03
+- **Title**: [A Photonic Parameter-shift Rule: Enabling Gradient Computation for Photonic Quantum Computers](arXiv:2410.02726v1)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: We present a method for gradient computation in quantum algorithms implemented on linear optical quantum computing platforms. While parameter-shift rules have become a staple in qubit gate-based quantum computing for calculating gradients, their direct application to photonic platforms has been hindered by the non-unitary nature of differentiated phase-shift operators in Fock space. We introduce a photonic parameter-shift rule that overcomes this limitation, providing an exact formula for gradient computation in linear optical quantum processors. Our method scales linearly with the number of input photons and utilizes the same parameterized photonic circuit with shifted parameters for each evaluation. This advancement bridges a crucial gap in photonic quantum computing, enabling efficient gradient-based optimization for variational quantum algorithms on near-term photonic quantum processors. We demonstrate the efficacy of our approach through numerical simulations in quantum chemistry and generative modeling tasks, showing superior optimization performance as well as robustness to noise from finite sampling and photon distinguishability compared to other gradient-based and gradient-free methods.
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
 - **Title**: [Title of the Paper](link)
 - **Authors**: Author Names
 - **Keywords**: List of keywords
@@ -494,8 +582,9 @@ QUBO matrices as initial QUBOs are not effective.
 - **Summary**: Brief summary or key points of the paper
 - **Miscellaneous**: Any additional information
 ---
-### Paper 15 (Add more as needed)
-- **Date**: 2024-09-28
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
 - **Title**: [Title of the Paper](link)
 - **Authors**: Author Names
 - **Keywords**: List of keywords
@@ -503,8 +592,89 @@ QUBO matrices as initial QUBOs are not effective.
 - **Summary**: Brief summary or key points of the paper
 - **Miscellaneous**: Any additional information
 ---
-### Paper 15 (Add more as needed)
-- **Date**: 2024-09-28
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
+- **Title**: [Title of the Paper](link)
+- **Authors**: Author Names
+- **Keywords**: List of keywords
+- **Abstract**: Abstract text here
+- **Summary**: Brief summary or key points of the paper
+- **Miscellaneous**: Any additional information
+---
+
+### Paper I (Add more as needed)
+- **Date**: YYYY-MM-DD
 - **Title**: [Title of the Paper](link)
 - **Authors**: Author Names
 - **Keywords**: List of keywords
