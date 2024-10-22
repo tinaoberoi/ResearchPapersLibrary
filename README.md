@@ -32,8 +32,17 @@ A library of research papers along with their summary and explanation of require
   - [Quantum Tutorials Youtube](https://www.youtube.com/watch?v=5xMHwFMEB-M&list=PL0Xofz0xOUtztLE7LaDdKQ_8_8GpKvf5k)
   - [Lie Algebra Book]()
 
+- Complexity Theory
+  - [Intro to NP, Np hard and Reductions](https://www.youtube.com/watch?v=eHZifpgyH_4)
+  - [BQP and Classical Complexity](./notes/bqp.md)
+  
 - Miscelleneous
   - [Difference between Fermi Hubbard Model and Quantum Skyrmions](./notes/fermi_vs_skyrmion.md)
   - [Transmon qubits](./notes/transmon_qubits.md)
   - [AdS/CFT correspondence](./notes/ads_cft.md)
+  - [QUBO vs QUSO](./notes/qubo_vs_quso.md)
+  - [Qumodes vs qubits](./notes/qumodes_vs_qubits.md)
+
+- Project Ideas
+  - [Compare VQE vs PQE]
   - 
