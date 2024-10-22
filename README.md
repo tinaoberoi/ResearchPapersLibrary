@@ -1,5 +1,5 @@
 # ResearchPapersLibrary
-A library of research papers along with their summary and explanation of required concepts
+A library for all quantum topics from beginner to advanced. It also includes the papers on arxiv relevant to my current projects.
 
 ## Topics
 - Understanding Different Qubit Implementations
@@ -13,9 +13,7 @@ A library of research papers along with their summary and explanation of require
   - Read:
   - To Read:
 - Classical Non Convex Optiminzation Algorithms
-  - Read:
-  - To Read:
-    - https://arxiv.org/pdf/1505.03068
+  - https://arxiv.org/pdf/1505.03068
 - Cliffords
   - [What are clifford gates and clifford circuits? ](./notes/clifford_intro.md)
 
@@ -35,7 +33,12 @@ A library of research papers along with their summary and explanation of require
 - Complexity Theory
   - [Intro to NP, Np hard and Reductions](https://www.youtube.com/watch?v=eHZifpgyH_4)
   - [BQP and Classical Complexity](./notes/bqp.md)
-  
+
+- Ham Models
+  - [Ising]()
+  - [Hubbard]()
+  - [Skyrmion]()
+  - 
 - Miscelleneous
   - [Difference between Fermi Hubbard Model and Quantum Skyrmions](./notes/fermi_vs_skyrmion.md)
   - [Transmon qubits](./notes/transmon_qubits.md)
