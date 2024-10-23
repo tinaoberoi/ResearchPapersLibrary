@@ -10,10 +10,12 @@
 
 ### Paper I (Add more as needed)
 - **Date**: 2024-10-22
-- **Title**: [Title of the Paper](link)
+- **Title**: [p-SWAP: A Generic Cost-Effective Quantum Boolean-Phase SWAP Gate Using Two
+CNOT Gates and the Bloch Sphere Approach]([link](https://arxiv.org/pdf/2410.16641))
 - **Authors**: Author Names
 - **Keywords**: List of keywords
-- **Abstract**: Abstract text here
+- **Abstract**: A generic Boolean-phase SWAP gate is introduced for quantum cost-effectiveness. This gate is termed the “p-SWAP”, and p is a customizable phase difference between the swapped qubits, where 0 ≤ p ≤ ± π radians. The cost-effectiveness of p-SWAP gate comes from a lower quantum cost for its final transpiled quantum circuit into a real quantum computer. The p-SWAP gate only utilizes two Feynman (CNOT) gates, as compared to the standard SWAP gate constructed from three CNOT gates. The quantum circuit of p-SWAP gate is geometrically designed using our Bloch sphere approach. The generality of p-SWAP gate is proposed for Phase oracles requiring a desirable p for a combination set of swapped qubits, as well as for Boolean oracles requiring a cost-effective SWAP gate when p is ignored. In this paper, after transpilation (synthesization) into a real quantum computer, it was concluded that the transpiled quantum circuit of p-SWAP gate has a lower quantum cost than that of the standard SWAP gate.
+
 - **Summary**: Brief summary or key points of the paper
 - **Miscellaneous**: Any additional information
 ---
