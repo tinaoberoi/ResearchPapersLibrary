@@ -1,9 +1,54 @@
 ## SVD
 https://builtin.com/articles/svd-algorithm
 
-> [!note] Solving QUBO with Gurobi > - **Presolve Phase**: Reduce complexity by removing redundant variables and constraints. > - **Bilinear Form**: For nonconvex QUBO problems, Gurobi reformulates them into a _bilinear form_ by introducing auxiliary variables. > - **Branch and Cut Method** > - **Termination**: Gurobi concludes the optimization process once all nodes have been explored or pruned.
+# Divide and conquer implementation SVD 
+Implement on multi-node and multi-gpu version of this
+[ref](https://scicomp.stackexchange.com/questions/1861/understanding-how-numpy-does-svd)
+
+
+# Singular Value Decomposition (SVD) Algorithms
+
+This guide covers four main algorithms used to compute the Singular Value Decomposition (SVD) of a matrix, focusing on their complexities, definitions, and usage scenarios.
+
+## Algorithms and Complexities
+
+| Algorithm                           | Complexity                      | Terms                                                                                              |
+|-------------------------------------|---------------------------------|---------------------------------------------------------------------------------------------------|
+| Golub-Kahan Bidiagonalization + QR  | \( O(m^2 n) \)                 | - \( m \): Rows in \( A \) <br> - \( n \): Columns in \( A \)                                      |
+| Divide-and-Conquer SVD              | \( O(n^3) \)                   | - \( n \): Size of square matrix \( A \)                                                          |
+| Randomized SVD                      | \( O(mn \log k + k^2 m) \)     | - \( m \): Rows in \( A \) <br> - \( n \): Columns in \( A \) <br> - \( k \): Target rank          |
+| Lanczos Algorithm                   | \( O(k \cdot \text{nnz}(A)) \) | - \( k \): Number of desired singular values <br> - \(\text{nnz}(A)\): Non-zero elements in \( A \) |
+
+## Definitions
+
+- **\( m \)**: Number of rows in matrix \( A \).
+- **\( n \)**: Number of columns in matrix \( A \).
+- **\( k \)**: Target rank or number of singular values desired.
+- **\(\text{nnz}(A)\)**: Number of non-zero elements in matrix \( A \), important for sparse matrices.
+
+## Python Example Code
+
+Below is a Python example that computes the SVD of a matrix using NumPy and SciPy.
+
+### Basic SVD Calculation with NumPy
+
+```python
+import numpy as np
+
+# Create a random matrix A
+A = np.random.rand(4, 3)
+
+# Compute the SVD
+U, s, VT = np.linalg.svd(A, full_matrices=False)
+
+print("U Matrix:", U)
+print("Singular Values:", s)
+print("V^T Matrix:", VT)
+
+```
 
 ## Diagonalisation of Matrix 
+[source](https://www.statlect.com/matrix-algebra/matrix-diagonalization#:~:text=Matrix%20diagonalization%20is%20the%20process,Not%20all%20matrices%20are%20diagonalizable.)
 
 	Matrix diagonalisation is performing similarity transformation on a matrix in order to recover a similar matrix that is diagonal. Not all matrices are diagonalisable. Diagonalisable matrices are those that have no defective eigen values.
 
@@ -27,12 +72,14 @@ A is diagonalisable if and only if it is similar to diagonal matrix.
 
 
 
-> [!note] Singular Values and Eigenvalues
-> **Eigenvalue Definition**: Eigenvalues are defined for square matrices.
-> 
-> **Singular Values**: For non-square matrices, we use *singular values*. The singular values of an \( m \times n \) matrix \( A \) are the positive square roots of the nonzero eigenvalues of the corresponding matrix \( A^T A \).
-> 
-> **Singular Vectors**: The corresponding eigenvectors of \( A^T A \) are called *singular vectors*.
+### Singular Values and Eigenvalues
+
+**Eigenvalue Definition**: Eigenvalues are defined for square matrices.
+
+**Singular Values**: For non-square matrices, we use *singular values*. The singular values of an \( m \times n \) matrix \( A \) are the positive square roots of the nonzero eigenvalues of the corresponding matrix \( A^T A \).
+
+**Singular Vectors**: The corresponding eigenvectors of \( A^T A \) are called *singular vectors*.
+
 
 <details>
 <summary>Example of singular value </summary>
@@ -64,42 +111,18 @@ $AP_{k} = D_{kk}P_{k}$
 
 As a result $P_{k}$ is eigenvector and $D_{kk}$ is the eigen value. Thus the diagonal element of D are eigenvalues of A and columns of P are eigenvectors. The matrix P used in diagonalisation must be invertible. 
 
->[!note] 
-> If A's eigenvalues are distinct , then A doesnot hae defective eigenvalues. Therefore, possessing distinct eigenvalues is a sufficient condition for diagonalizability.
+>
+> If A's eigenvalues are distinct , then A doesnot hae defective eigenvalues. Therefore, possessing distinct eigenvalues is a sufficient condition for diagonalizability.\
 
+<details>
+<summary>How to diagonalise a matrix</summary>
+<li>Compute eigenvalues of A</li>
+<li>Check no eigenvalue is defective. If any eigenvalue is defective, then the matrix cannot be diagonalised. Else next step</li>
+<li>If matrix is diagonalisable. For each eigenvalue find LI eigenvectors</li>
+<li>Adjoin eigenvectors to form matrix P.</li>
+<li>Build D.</li>
+<li>The diagonalisation is done</li>
+</details>
 
-
-Complexity of SVD
-
-## MPS Calculations
-
-https://www.tensors.net/p-tutorial-1
-
-Given a density matrix calculate MPS
-spectrum of density matrix
-https://arxiv.org/pdf/2303.08738
-
-
-
-Given a state vector generate MPS
-Given an operator generate MPO code
-get density matrix of circuit
-TEBD
-
-https://arxiv.org/pdf/1905.08768
-
-
-Friday:
-- SVD (builtint)
-- Diagonalisation
-Saturday:
-- 6-8: Review (**complexity of SVD** and analyze computational requirements for different matrix sizes), revise yesterday's concepts
-- 8-10: breakfast + MTE paper 2
-- 10:00 - 1:00: tensor net tutorial 1
-- 1:00 - 3:00 - Gym + Lunch
-- 3:00 - 5:00 - Tensor net tutorial 2
-- 9- 11 - Revise tutorial 1 and 2 + Classical solvers
-Sunday:
-- 6-8: tensornet tutorial 3
-- 8-10: breakfast + hw1 and hw2
-- 10 -
+>The diagonalisation is not unqiue
+> we can change the order in which the eogenvalues are put on D. Or we can replace a column of P with scalr multiple of itself. If there is a repreated eigenvaluem we can choose a different basis for its eigenspace.
