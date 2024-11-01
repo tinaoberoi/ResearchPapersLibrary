@@ -126,3 +126,14 @@ As a result $P_{k}$ is eigenvector and $D_{kk}$ is the eigen value. Thus the dia
 
 >The diagonalisation is not unqiue
 > we can change the order in which the eogenvalues are put on D. Or we can replace a column of P with scalr multiple of itself. If there is a repreated eigenvaluem we can choose a different basis for its eigenspace.
+
+**Complexity of svd**
+
+```
+ | d1
+ A
+|| d2
+```
+Assuming d2>d1, complexity of svd = O(d1d2^2)
+
+https://en.wikipedia.org/wiki/QR_decomposition
