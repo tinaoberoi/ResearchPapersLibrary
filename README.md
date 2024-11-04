@@ -7,8 +7,7 @@ A library for all quantum topics from beginner to advanced. It also includes the
   - [Superconducting qubits](https://www.diva-portal.org/smash/get/diva2:755939/FULLTEXT01.pdf)
   - [IBM on Superconducting Qubits](https://medium.com/qiskit/how-the-first-superconducting-qubit-changed-quantum-computing-forever-96cf261b8498#:~:text=superconducting%20circuit%20with%20a%20Josephson%20Junction%20have,what%20we%20refer%20to%20as%20nonlinear%20inductors.)
 - Tensor Networks
-  - Read:
-  - To Read:
+  - [Belief Propagation](./notes/belief_propagation.md)
 - QAOA
   - Read:
   - To Read:
@@ -45,7 +44,9 @@ A library for all quantum topics from beginner to advanced. It also includes the
   - [AdS/CFT correspondence](./notes/ads_cft.md)
   - [QUBO vs QUSO](./notes/qubo_vs_quso.md)
   - [Qumodes vs qubits](./notes/qumodes_vs_qubits.md)
-
+  - [Density Matrix](https://homepage.univie.ac.at/reinhold.bertlmann/pdfs/T2_Skript_Ch_9corr.pdf)
+  - [Multithreading](./notes/multithreading.md)
+  - [GPU Programming](./notes/gpu_programming.md)
 - Project Ideas
   - [Compare VQE vs PQE]
   - 
