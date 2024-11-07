@@ -50,3 +50,8 @@ A library for all quantum topics from beginner to advanced. It also includes the
 - Project Ideas
   - [Compare VQE vs PQE]
   - 
+
+Advt of analog vs gate based computing?
+
+If we have a 30ns simulations, analog will take 30ns. Whereas in gate based, gates T1 is of order 20/30 ns, a time evolution of 30ns wont take that much time.
+

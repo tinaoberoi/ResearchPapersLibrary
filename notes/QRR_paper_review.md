@@ -46,7 +46,23 @@ Simulated annealing is an optimization algorithm inspired by the process of _ann
 	  2. If f(n) better than f(c) accept f(n). else if f(c) is better than f(n) Accept the neighbouring solution with probabilty,  $e^{{f(c) - f(n)}/{T}}$
 	    This probability formula allows worse solutions to be accepted early in the process when temperature is high, helping the algorithm explore broadly and avoid getting trapped in local minima. As the temperature decreases, the likelihood of accepting worse solutions also decreases, refining the search toward the global optimum.	  
 </details>
+Quantum annealing follows quantum adiabatic. In quantum annealing we have degenerate ground states, all ground states will have different probabilities.
+
+Difference between simulated and quantum annealing
+
+- Simulated Annealing (SA):
+Based on classical thermal annealing.
+Mimics the cooling of a material: as temperature decreases, the material settles into a low-energy state.
+Uses thermal fluctuations to explore the solution space, relying on stochastic (random) transitions between states.
+
+- Quantum Annealing (QA):
+
+Based on quantum mechanics.
+Utilizes quantum fluctuations and quantum tunneling to explore the solution space.
+Instead of thermal energy, QA relies on the principles of superposition and tunneling through energy barriers, potentially bypassing local minima more efficiently.
+
 https://www.geeksforgeeks.org/simulated-annealing/
+
 ## Burer
 <details closed>
 	<summary>Burer algorithm</summary>
