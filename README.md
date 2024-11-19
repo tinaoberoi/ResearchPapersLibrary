@@ -47,9 +47,11 @@ A library for all quantum topics from beginner to advanced. It also includes the
   - [Density Matrix](https://homepage.univie.ac.at/reinhold.bertlmann/pdfs/T2_Skript_Ch_9corr.pdf)
   - [Multithreading](./notes/multithreading.md)
   - [GPU Programming](./notes/gpu_programming.md)
+  - [Relationshio between spetral gap and quantum gate time](./notes/spectral_gap_vs_quantum_gate_time.md)
+  - 
 - Project Ideas
   - [Compare VQE vs PQE]
-  - 
+  - [Write cublas based mps and mpo and peps] 
 
 Advt of analog vs gate based computing?
 
