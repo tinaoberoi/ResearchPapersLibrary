@@ -136,6 +136,38 @@ The eigenvector \( \Psi \) is critical for optimizing the MPS representation of 
 DMRG iteratively optimizes MPS tensors by solving local eigenvalue problems and updating tensors through SVD. Solving for the eigenvector \( \Psi \) is a crucial part of refining the MPS to approximate the ground state of the system efficiently.
 
 
+## **Tensor Slicing**
+
+Tensor Network Slicing is a technique used to manage the contraction of large tensor networks by breaking down the problem into smaller, more manageable pieces. It involves fixing the values of certain indices, effectively splitting the contraction process into multiple smaller tasks. These tasks can then be executed independently and aggregated later to produce the final result.
+
+### Example
+
+Consider a tensor network representing the sum:
+
+$
+C = \sum_{i, j, k} A[i, j] \cdot B[j, k] \cdot D[k, i]
+$
+
+Instead of contracting all at once, we could slice over index \(k\):
+
+- **Fix \(k = 1\):** Compute  
+$
+  A[i, j] \cdot B[j, 1] \cdot D[1, i]
+$
+
+- **Fix \(k = 2\):** Compute  
+$
+  A[i, j] \cdot B[j, 2] \cdot D[2, i]
+$
+
+- ...
+
+- **Aggregate results:**  
+$
+  C = \sum_k (\text{result for each slice})
+$
+
+
 ## MPS Calculations
 
 https://www.tensors.net/p-tutorial-1

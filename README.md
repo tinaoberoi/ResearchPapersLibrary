@@ -48,11 +48,21 @@ A library for all quantum topics from beginner to advanced. It also includes the
   - [Multithreading](./notes/multithreading.md)
   - [GPU Programming](./notes/gpu_programming.md)
   - [Relationshio between spetral gap and quantum gate time](./notes/spectral_gap_vs_quantum_gate_time.md)
-  - 
+  - [Concept of Contexuality](./notes/contexuality.md)
 - Project Ideas
   - [Compare VQE vs PQE]
   - [Write cublas based mps and mpo and peps] 
-
+  - [2500 Pendulums](https://community.wolfram.com/groups/-/m/t/3328657)
+  - [Mera for decoding?]
+  - benchmark all tensornetwork simulators
+  - 2:4 sparsity for decoders Implementations (https://neuralmagic.com/blog/24-sparse-llama-smaller-models-for-efficient-gpu-inference/)
+  - CUDA Implementations and optimisations (https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog)
+  - Jordan Wigner based decoding is O(1) use with belief vs Bravyi and Kitaev decoding O(logn)?
+  - Fermionic Majorana commuting relations
+  - QEC codes are bad at operating at errors, (Sophia Lin video on youtube)
+  - How to prevent these ? enlargement of qubits Q3DE and Adaptive surface codes and Sruf deformer workflow.
+  - is decoding agnostic to encoding technique, if no then try doing for concatenating decoding.
+  - 
 Advt of analog vs gate based computing?
 
 If we have a 30ns simulations, analog will take 30ns. Whereas in gate based, gates T1 is of order 20/30 ns, a time evolution of 30ns wont take that much time.
